@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document - Det her er en kommentar i CSS */
+
+#box1{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 17);
+    animation-name: move-box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#box2{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(187, 0, 255);
+    animation-name: move-box-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-box{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(90deg);
+        background-color: rgb(0, 255, 17);
+    }
+    25%{
+        transform: translateX(500px) translateY(0px) rotate(180deg);
+        background-color: rgb(0, 255, 204);
+    }
+    50%{
+        transform: translateX(500px) translateY(500px) rotate(270deg);
+        background-color: rgb(0, 136, 255);
+    }
+    75%{
+        transform: translateX(0px) translateY(500px) rotate(360deg);
+        background-color: rgb(13, 0, 255);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px) rotate(450deg);
+        background-color: rgb(0, 255, 17);
+    }
+}
+
+@keyframes move-box-2{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(90deg);
+        background-color: rgb(187, 0, 255);
+    }
+    25%{
+        transform: translateX(0px) translateY(500px) rotate(180deg);
+        background-color: rgb(255, 0, 251);
+    }
+    50%{
+        transform: translateX(500px) translateY(500px) rotate(270deg);
+        background-color: rgb(255, 0, 98);
+    }
+    75%{
+        transform: translateX(500px) translateY(0px) rotate(360deg);
+        background-color: rgb(255, 0, 0);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px) rotate(450deg);
+        background-color: rgb(187, 0, 255);
